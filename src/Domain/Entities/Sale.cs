@@ -1,6 +1,3 @@
-using SaleReporting.Domain.Common;
-using SaleReporting.Domain.Enums;
-
 namespace SaleReporting.Domain.Entities;
 
 public class Sale: BaseAuditableEntity
@@ -18,7 +15,6 @@ public class Sale: BaseAuditableEntity
     public double COGS { get; set; }
     public double Profit { get; set; }
     public DateTime Date { get; set; }
-
 
 
     public Segment Segment { get; set; } = null!;
